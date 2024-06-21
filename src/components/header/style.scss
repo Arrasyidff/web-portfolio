@@ -1,3 +1,87 @@
-div {
-    background: blue;
+.wp__header-container {
+    height: 100vh;
+    padding: 3.5rem 7rem;
+    display: flex;
+    position: relative;
+
+    .wp__header-left,
+    .wp__header-right {
+        width: 50%;
+    }
+
+    .wp__header-navbar {
+        display: flex;
+        justify-content: flex-end;
+        font-family: var(--arimo);
+        a {
+            text-decoration: none;
+            font-size: 1rem !important;
+            color: black;
+            font-weight: 700;
+            &:not(:first-child) {
+                margin-left: 4rem;
+            }
+        }
+    }
+
+    .wp__header-content {
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        h1 {
+            font-family: var(--league-spartan);
+            font-size: 5rem !important;
+        }
+        h2 {
+            font-family: var(--arimo);
+            font-size: 2.5rem !important;
+            font-weight: 50;
+        }
+        p {
+            font-family: var(--montserrat);
+            margin-top: 1.5rem;
+            width: 45rem;
+            font-size: 1.3rem !important;
+            &::after {
+                content: '';
+                margin-top: 1.2rem;
+                display: block;
+                border-bottom: .15rem solid black;
+                width: 50%;
+                background: red;
+            }
+        }
+    }
+
+    .wp__header--black-triangle,
+    .wp__header--grey-triangle {
+        position: absolute;
+        height: 9rem;
+        width: 9rem;
+        left: 7rem;
+    }
+
+    .wp__header--black-triangle {
+        top: 3.5rem;
+    }
+
+    .wp__header--grey-triangle {
+        bottom: 3.5rem;
+    }
+
+    .wp__header-personal-img {
+        position: absolute;
+        overflow: hidden;
+        height: 45rem;
+        width: 45rem;
+        bottom: 0;
+        right: 0;
+        img {
+            width: 100%;
+            position: absolute;
+        }
+    }
 }

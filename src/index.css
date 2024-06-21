@@ -1,5 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=League+Spartan:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --league-spartan: "League Spartan", sans-serif;
+    --arimo: "Arimo", sans-serif;
+    --montserrat: "Montserrat", sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background: #EEEEEE;
+}
+
+.section--padding {
+    padding: 5rem 7rem;
+}
+
+.section--title {
+    font-family: var(--league-spartan);
+    color: black;
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.sub--title {
+    font-family: var(--league-spartan);
+    color: black;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+p {
+    font-family: var(--montserrat);
+    font-size: 1.2rem;
 }
