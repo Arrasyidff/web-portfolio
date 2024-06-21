@@ -3,7 +3,7 @@ import './style.scss'
 function AboutMe() {
   return (
     <section className='wp__about-me-container section--padding'>
-      <h1 className='section--title'>ABOUT ME</h1>
+      <h1 className='section--title'>ABOUT ME.</h1>
       <p className='wp__about-me--description'>
         Hi there! My name is Arrasyid Fadel Fatonsyah, but you can call me ARFAFA.
         I'm a Fullstack Web Developer with a strong focus on backend development.
@@ -12,7 +12,7 @@ function AboutMe() {
       </p>
 
       <div className='wp__about-me-skillset'>
-        <h2 className='sub--title'>Skill - Set</h2>
+        <h2 className='sub--title'>Skill - Set.</h2>
         <div className='wp__about-me-skillset-item'>
           {SKILLS.map((skill, i) => {
             if (skill.isIcon) return (
@@ -29,7 +29,7 @@ function AboutMe() {
         </div>
       </div>
 
-      <div className='wp__about-me-contact'>
+      {/* <div className='wp__about-me-contact'>
         <h2 className='sub--title'>Feel free to reach out if you'd like to collaborate or chat about tech!</h2>
         <div className='wp__about-me-contacts-item'>
           {LINKS.map((link, i) => (
@@ -38,7 +38,7 @@ function AboutMe() {
             </button>
           ))}
         </div>
-      </div>
+      </div> */}
     </section>
   )
 }
@@ -66,15 +66,15 @@ const SKILLS: Skill[] = [
   {iconClass: 'fab fa-sass', isIcon: true},
 ]
 
-type Link = {
-  iconClass: string
-  link: string
-}
-const LINKS: Link[] = [
-  {iconClass: 'fab fa-linkedin-in', link: 'https://www.linkedin.com/in/arrasyid-fadel-fatonsyah/'},
-  {iconClass: 'fab fa-github-square', link: 'https://github.com/Arrasyidff'},
-  {iconClass: 'far fa-envelope', link: 'mailto:aff.anton20@gmail.com'},
-  {iconClass: 'fab fa-whatsapp', link: 'https://wa.me/089635164141'}
-]
+// type Link = {
+//   iconClass: string
+//   link: string
+// }
+// const LINKS: Link[] = [
+//   {iconClass: 'fab fa-linkedin-in', link: 'https://www.linkedin.com/in/arrasyid-fadel-fatonsyah/'},
+//   {iconClass: 'fab fa-github-square', link: 'https://github.com/Arrasyidff'},
+//   {iconClass: 'far fa-envelope', link: 'mailto:aff.anton20@gmail.com'},
+//   {iconClass: 'fab fa-whatsapp', link: 'https://wa.me/089635164141'}
+// ]
 
 export default AboutMe

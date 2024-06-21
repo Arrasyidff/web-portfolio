@@ -1,0 +1,26 @@
+.wp-service__container {
+    .wp-service__items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+
+        .wp-service__item {
+            text-align: center;
+            padding: 2rem;
+            border: 2px solid #141517;
+            box-shadow: .5rem .5rem 0rem -0.063rem rgb(0, 0, 0);
+            -webkit-box-shadow: .5rem .5rem 0rem -0.063rem rgb(0, 0, 0);
+            -moz-box-shadow: .5rem .5rem 0rem -0.063rem rgb(0, 0, 0);
+            transition: ease .2s;
+            &:hover {
+                box-shadow: 0rem 0rem 0rem -0.063rem rgb(0, 0, 0);
+                -webkit-box-shadow: 0rem 0rem 0rem -0.063rem rgb(0, 0, 0);
+                -moz-box-shadow: 0rem 0rem 0rem -0.063rem rgb(0, 0, 0);
+            }
+
+            p {
+                margin-top: 1rem;
+            }
+        }
+    }
+}

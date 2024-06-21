@@ -19,8 +19,6 @@ function Header() {
           <a href="#">HOME</a>
           <a href="#abouot_me">ABOUT ME</a>
           <a href="#service">SERVICE</a>
-          <a href="#contact">CONTACT</a>
-          <a href="#resume">RESUME</a>
         </nav>
       </div>
 
