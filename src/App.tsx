@@ -1,4 +1,4 @@
-import {Header, AboutMe, Service, Portfolio} from '@components/index'
+import {Header, AboutMe, Service, Portfolio, ContactMe} from '@components/index'
 function App() {
   return (
     <>
@@ -6,6 +6,7 @@ function App() {
       <AboutMe />
       <Service />
       <Portfolio />
+      <ContactMe />
     </>
   );
 }

@@ -84,4 +84,17 @@
             position: absolute;
         }
     }
+
+    /* animation delay */
+    .wp__header-personal-img.scale-up-bottom {
+        animation-delay: .30s;
+    }
+
+    .wp__header-content.fade-in-top {
+        animation-delay: .60s;
+    }
+
+    .wp__header--grey-triangle.fade-in-top {
+        animation-delay: .90s;
+    }
 }

@@ -1,0 +1,41 @@
+.wp-contact-me__container {
+    button {
+        cursor: pointer;
+        font-family: var(--montserrat);
+        font-size: 1.8rem;
+        color: black;
+        background: white;
+        border: 0.125rem solid var(--color-secondary);
+        outline: none;
+        padding: .5rem;
+        box-shadow: .5rem .5rem 0rem -0.063rem var(--color-secondary);
+        -webkit-box-shadow: .5rem .5rem 0rem -0.063rem var(--color-secondary);
+        -moz-box-shadow: .5rem .5rem 0rem -0.063rem var(--color-secondary);
+        transition: ease .2s;
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+        &:hover {
+            box-shadow: 0rem 0rem 0rem -0.063rem var(--color-secondary);
+            -webkit-box-shadow: 0rem 0rem 0rem -0.063rem var(--color-secondary);
+            -moz-box-shadow: 0rem 0rem 0rem -0.063rem var(--color-secondary);
+        }
+    }
+
+    .contact-me__items {
+        margin-top: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wp-contact-me__actions {
+        margin-top: 4rem;
+        display: flex;
+        justify-content: center;
+        button {
+            font-weight: 500;
+            font-size: 7rem;
+        }
+    }
+}

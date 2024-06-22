@@ -1,5 +1,5 @@
 .wp-portflio__container {
-    background: #141517;
+    background: var(--color-secondary);
 
     h1 {
         color: white;
@@ -15,21 +15,21 @@
             text-align: center;
             padding: 2rem;
             background: white;
-            box-shadow: .5rem .5rem 0rem -0.063rem rgba(183,183,183,1);
-            -webkit-box-shadow: .5rem .5rem 0rem -0.063rem rgba(183,183,183,1);
-            -moz-box-shadow: .5rem .5rem 0rem -0.063rem rgba(183,183,183,1);
+            box-shadow: .5rem .5rem 0rem -0.063rem var(--color-grey-boxshadow);
+            -webkit-box-shadow: .5rem .5rem 0rem -0.063rem var(--color-grey-boxshadow);
+            -moz-box-shadow: .5rem .5rem 0rem -0.063rem var(--color-grey-boxshadow);
             transition: ease .2s;
             &:hover {
-                box-shadow: 0rem 0rem 0rem -0.063rem rgba(183,183,183,1);
-                -webkit-box-shadow: 0rem 0rem 0rem -0.063rem rgba(183,183,183,1);
-                -moz-box-shadow: 0rem 0rem 0rem -0.063rem rgba(183,183,183,1);
+                box-shadow: 0rem 0rem 0rem -0.063rem var(--color-grey-boxshadow);
+                -webkit-box-shadow: 0rem 0rem 0rem -0.063rem var(--color-grey-boxshadow);
+                -moz-box-shadow: 0rem 0rem 0rem -0.063rem var(--color-grey-boxshadow);
             }
 
             .wp-portflio__item-img {
                 margin-top: 1rem;
                 height: 20rem;
                 width: 100%;
-                border: .2rem solid #141517;
+                border: 0.125rem solid var(--color-secondary);
             }
 
             .wp-portflio__item-actions {
@@ -38,8 +38,8 @@
                     font-size: 1.2rem;
                     background: none;
                     outline: none;
-                    border: .2rem solid #141517;
-                    padding: .2rem .5rem;
+                    border: 0.125rem solid var(--color-secondary);
+                    padding: 0.125rem .5rem;
                 }
             }
         }
