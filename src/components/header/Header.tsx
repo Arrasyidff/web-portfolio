@@ -29,6 +29,10 @@ function Header() {
         <img className='rotate-center' src={circle} alt="circle-personal-img" />
         <img src={personal} alt="personal-img" />
       </div>
+
+      <div className='wp__header-bars'>
+        <i className="fas fa-bars"></i>
+      </div>
     </section>
   )
 }
