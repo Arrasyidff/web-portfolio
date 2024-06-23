@@ -6,7 +6,7 @@ function App() {
       <AboutMe />
       <Service />
       <Portfolio />
-      {/* <ContactMe /> */}
+      <ContactMe />
     </>
   );
 }
