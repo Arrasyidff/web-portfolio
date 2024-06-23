@@ -25,9 +25,11 @@
         -webkit-box-shadow: .5rem .5rem 0rem -0.063rem var(--color-grey-boxshadow);
         -moz-box-shadow: .5rem .5rem 0rem -0.063rem var(--color-grey-boxshadow);
         transition: ease .2s;
+
         &:not(:last-child) {
             margin-right: 2rem;
         }
+
         &:hover {
             box-shadow: 0rem 0rem 0rem -0.063rem var(--color-grey-boxshadow);
             -webkit-box-shadow: 0rem 0rem 0rem -0.063rem var(--color-grey-boxshadow);
@@ -45,8 +47,79 @@
             justify-content: center;
             flex-wrap: wrap;
             width: 60%;
+
             button {
                 margin-bottom: 2rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 1650px)
+{
+    .wp__about-me-container {
+        .wp__about-me--description {
+            width: 100%;
+        }
+
+        button {
+            font-size: 1.5rem !important;
+            padding: .3rem;
+
+            &:not(:last-child) {
+                margin-right: 1rem;
+            }
+        }
+
+        .wp__about-me-skillset {
+            .wp__about-me-skillset-item {
+                margin-top: 1rem;
+                width: 100%;
+
+                button {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 820px) and (max-width: 1700px)
+{
+    .wp__about-me-container {
+        .wp__about-me--description {
+            width: 80%;
+        }
+
+        .wp__about-me-skillset {
+            .wp__about-me-skillset-item {
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media (max-width: 540px)
+{
+    .wp__about-me-container {
+        
+        button {
+            font-size: 1rem !important;
+            padding: .3rem;
+            box-shadow: .3rem .3rem 0rem -0.063rem var(--color-grey-boxshadow);
+            -webkit-box-shadow: .3rem .3rem 0rem -0.063rem var(--color-grey-boxshadow);
+            -moz-box-shadow: .3rem .3rem 0rem -0.063rem var(--color-grey-boxshadow);
+
+            &:not(:last-child) {
+                margin-right: .8rem;
+            }
+        }
+
+        .wp__about-me-skillset {
+            .wp__about-me-skillset-item {
+                button {
+                    margin-bottom: .8rem;
+                }
             }
         }
     }

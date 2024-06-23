@@ -3,8 +3,8 @@ function App() {
   return (
     <>
       <Header />
-      {/* <AboutMe />
-      <Service />
+      <AboutMe />
+      {/* <Service />
       <Portfolio />
       <ContactMe /> */}
     </>

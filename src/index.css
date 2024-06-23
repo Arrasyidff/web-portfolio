@@ -46,6 +46,34 @@ p {
     font-size: 1.2rem;
 }
 
+@media (max-width: 1650px)
+{
+    .section--padding {
+        padding: 3rem;
+    }
+
+    .section--title {
+        font-size: 3rem !important;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 540px)
+{
+    .section--padding {
+        padding: 3rem 2rem;
+    }
+
+    .section--title {
+        font-size: 3rem !important;
+    }
+
+    p {
+        font-size: .9rem !important;
+    }
+}
+
+
 .scale-up-bottom {
     -webkit-animation: scale-up-bottom 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     animation: scale-up-bottom 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;

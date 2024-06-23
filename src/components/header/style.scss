@@ -192,7 +192,7 @@
 @media (max-width: 540px)
 {
     .wp__header-container {
-        padding: 1.5rem;
+        padding: 1.5rem 1.5rem 4rem 1.5rem;
 
         .wp__header-navbar {
             display: none;
@@ -234,8 +234,6 @@
 @media (max-width: 350px)
 {
     .wp__header-container {
-        padding: 1rem;
-
         .wp__header-content {
             h1 {
                 font-size: 2.5rem !important;
