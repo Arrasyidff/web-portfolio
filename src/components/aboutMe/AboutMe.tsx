@@ -3,17 +3,17 @@ import './style.scss'
 function AboutMe() {
   return (
     <section className='wp__about-me-container section--padding'>
-      <h1 className='section--title'>ABOUT ME.</h1>
-      <p className='wp__about-me--description'>
+      <h1 className='section--title fade-in-top'>ABOUT ME.</h1>
+      <p className='wp__about-me--description fade-in-top'>
         Hi there! My name is Arrasyid Fadel Fatonsyah, but you can call me ARFAFA.
         I'm a Fullstack Web Developer with a strong focus on backend development.
         With three years of professional experience, I currently work as a remote Backend Developer based
         in Kudus, Central Java. I specialize in creating scalable and efficient server-side applications.
       </p>
 
-      <div className='wp__about-me-skillset'>
+      <div className='wp__about-me-skillset fade-in-top'>
         <h2 className='sub--title'>Skill - Set.</h2>
-        <div className='wp__about-me-skillset-item'>
+        <div className='wp__about-me-skillset-item fade-in-top'>
           {SKILLS.map((skill, i) => {
             if (skill.isIcon) return (
               <button key={i}>
@@ -28,17 +28,6 @@ function AboutMe() {
           })}
         </div>
       </div>
-
-      {/* <div className='wp__about-me-contact'>
-        <h2 className='sub--title'>Feel free to reach out if you'd like to collaborate or chat about tech!</h2>
-        <div className='wp__about-me-contacts-item'>
-          {LINKS.map((link, i) => (
-            <button key={i} onClick={() => window.open(link.link)}>
-              <i className={link.iconClass}></i>
-            </button>
-          ))}
-        </div>
-      </div> */}
     </section>
   )
 }
