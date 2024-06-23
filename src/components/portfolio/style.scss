@@ -1,16 +1,16 @@
-.wp-portflio__container {
+.wp-portfolio__container {
     background: var(--color-secondary);
 
     h1 {
         color: white;
     }
 
-    .wp-portflio__items {
+    .wp-portfolio__items {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 3rem;
 
-        .wp-portflio__item {
+        .wp-portfolio__item {
             cursor: pointer;
             text-align: center;
             padding: 2rem;
@@ -25,14 +25,14 @@
                 -moz-box-shadow: 0rem 0rem 0rem -0.063rem var(--color-grey-boxshadow);
             }
 
-            .wp-portflio__item-img {
+            .wp-portfolio__item-img {
                 margin-top: 1rem;
                 height: 20rem;
                 width: 100%;
                 border: 0.125rem solid var(--color-secondary);
             }
 
-            .wp-portflio__item-actions {
+            .wp-portfolio__item-actions {
                 margin-top: 1rem;
                 button {
                     font-size: 1.2rem;
@@ -42,6 +42,31 @@
                     padding: 0.125rem .5rem;
                 }
             }
+        }
+    }
+}
+
+@media (max-width: 1490px)
+{
+    .wp-portfolio__container {
+        .wp-portfolio__items {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+
+            .wp-portfolio__item {
+                box-shadow: .3rem .3rem 0rem -0.063rem var(--color-grey-boxshadow);
+                -webkit-box-shadow: .3rem .3rem 0rem -0.063rem var(--color-grey-boxshadow);
+                -moz-box-shadow: .3rem .3rem 0rem -0.063rem var(--color-grey-boxshadow);
+            }
+        }
+    }
+}
+
+@media (max-width: 540px)
+{
+    .wp-portfolio__container {
+        .wp-portfolio__items {
+            grid-template-columns: repeat(1, 1fr);
         }
     }
 }
