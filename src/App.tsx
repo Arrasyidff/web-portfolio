@@ -4,8 +4,8 @@ function App() {
     <>
       <Header />
       <AboutMe />
-      {/* <Service />
-      <Portfolio />
+      <Service />
+      {/* <Portfolio />
       <ContactMe /> */}
     </>
   );

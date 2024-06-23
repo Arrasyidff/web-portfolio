@@ -24,3 +24,28 @@
         }
     }
 }
+
+@media (max-width: 1490px)
+{
+    .wp-service__container {
+        .wp-service__items {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+
+            .wp-service__item {
+                box-shadow: .3rem .3rem 0rem -0.063rem rgb(0, 0, 0);
+                -webkit-box-shadow: .3rem .3rem 0rem -0.063rem rgb(0, 0, 0);
+                -moz-box-shadow: .3rem .3rem 0rem -0.063rem rgb(0, 0, 0);
+            }
+        }
+    }
+}
+
+@media (max-width: 540px)
+{
+    .wp-service__container {
+        .wp-service__items {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}
