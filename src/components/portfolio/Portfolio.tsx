@@ -5,7 +5,7 @@ function Portfolio() {
         <div className='wp-portfolio__container section--padding'>
             <h1 className='section--title'>PORTFOLIO.</h1>
                 {((data): any => {
-                    if (data.length == 0) return (
+                    if (data.length === 0) return (
                         <p className='sub--title'>Uploading soon!</p>
                     )
                     return (
