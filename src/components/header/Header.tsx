@@ -7,17 +7,6 @@ import black_triangle from '@assets/header/black_triangle.png'
 import grey_triangle from '@assets/header/grey_triangle.png'
 
 function Header() {
-  
-  const NavBar: React.FC = () =>
-  {
-    return (
-      <nav className='wp__header-navbar fade-in-left'>
-        <a href="#home">HOME</a>
-        <a href="#abouot_me">ABOUT ME</a>
-        <a href="#service">SERVICE</a>
-      </nav>
-    )
-  }
 
   return (
     <section className='wp__header-container'>
@@ -47,5 +36,37 @@ function Header() {
     </section>
   )
 }
+
+const NavBar: React.FC = () =>
+  {
+    const handleScrollTo = (section: string) => {
+      if (section === 'home') {
+        const header = document.querySelector('.wp__header-container')
+        header?.scrollIntoView({behavior: 'smooth'})
+      } else if (section === 'about_me') {
+        const aboutme = document.querySelector('.wp__about-me-container')
+        aboutme?.scrollIntoView({behavior: 'smooth'})
+      } else if (section === 'service') {
+        const service = document.querySelector('.wp-service__container')
+        service?.scrollIntoView({behavior: 'smooth'})
+      } else if (section === 'portfolio') {
+        const portfolio = document.querySelector('.wp-portfolio__container')
+        portfolio?.scrollIntoView({behavior: 'smooth'})
+      } else if (section === 'contact') {
+        const contact = document.querySelector('.wp-contact-me__container')
+        contact?.scrollIntoView({behavior: 'smooth'})
+      }
+    }
+
+    return (
+      <nav className='wp__header-navbar fade-in-left'>
+        <button onClick={() => handleScrollTo('home')}>HOME</button>
+        <button onClick={() => handleScrollTo('about_me')}>ABOUT ME</button>
+        <button onClick={() => handleScrollTo('service')}>SERVICE</button>
+        <button onClick={() => handleScrollTo('portfolio')}>PORTFOLIO</button>
+        <button onClick={() => handleScrollTo('contact')}>CONTACT</button>
+      </nav>
+    )
+  }
 
 export default Header

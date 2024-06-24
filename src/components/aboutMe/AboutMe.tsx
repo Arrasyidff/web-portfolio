@@ -40,7 +40,7 @@ const SKILLS: Skill[] = [
   {iconClass: 'fab fa-js-square', isIcon: true},
   {iconClass: 'Typescript', isIcon: false},
   {iconClass: 'fab fa-node', isIcon: true},
-  {iconClass: 'ex', isIcon: false},
+  {iconClass: 'Express.js', isIcon: false},
   {iconClass: 'fab fa-php', isIcon: true},
   {iconClass: 'fab fa-laravel', isIcon: true},
   {iconClass: 'MySQL', isIcon: false},

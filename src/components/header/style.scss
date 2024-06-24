@@ -13,8 +13,10 @@
         display: none;
         justify-content: flex-end;
         font-family: var(--arimo);
-        a {
-            text-decoration: none;
+        button {
+            cursor: pointer;
+            outline: none;
+            border: none;
             font-size: 1rem !important;
             color: black;
             font-weight: 700;
@@ -122,8 +124,12 @@
         .wp__header-navbar {
             display: flex;
             justify-content: center;
-            a {
+            button {
                 font-size: 1.2rem !important;
+
+                &:not(:first-child) {
+                    margin-left: 1.4rem;
+                }
             }
         }
 
