@@ -12,7 +12,7 @@ function Portfolio() {
                         <>
                             <div className='wp-portfolio__items'>
                                 {
-                                    data.map((item: Portfolio, i: number) => (
+                                    data.map((item: PortfolioItem, i: number) => (
                                         <div key={i} className='wp-portfolio__item'>
                                             <h2 className='sub--title'>{item.name}</h2>
                                             <div className='wp-portfolio__item-img'>
@@ -29,11 +29,11 @@ function Portfolio() {
     )
 }
 
-type Portfolio = {
+type PortfolioItem = {
     name: string
     link: string
 } 
-const PORTFOLIOS: Portfolio[] = [
+const PORTFOLIOS: PortfolioItem[] = [
     // {name: 'Ecommerce', link: ''},
     // {name: 'Ecommerce', link: ''},
     // {name: 'Ecommerce', link: ''},
