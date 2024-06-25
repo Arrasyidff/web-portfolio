@@ -1,7 +1,7 @@
 .wp-service__container {
     .wp-service__items {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: 1rem;
 
         .wp-service__item {
@@ -25,15 +25,18 @@
     }
 }
 
-@media (min-width: 760px) {
+@media (min-width: 760px)
+{
     .wp-service__container {
         .wp-service__items {
+            grid-template-columns: repeat(2, 1fr);
             gap: 1.5rem;
         }
     }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1280px)
+{
     .wp-service__container {
         .wp-service__items {
             grid-template-columns: repeat(3, 1fr);

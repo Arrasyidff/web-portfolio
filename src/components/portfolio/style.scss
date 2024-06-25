@@ -7,17 +7,17 @@
 
     .wp-portfolio__items {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 3rem;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
 
         .wp-portfolio__item {
             cursor: pointer;
             text-align: center;
-            padding: 2rem;
+            padding: 1rem;
             background: white;
-            box-shadow: .5rem .5rem 0rem -0.063rem var(--color-grey-boxshadow);
-            -webkit-box-shadow: .5rem .5rem 0rem -0.063rem var(--color-grey-boxshadow);
-            -moz-box-shadow: .5rem .5rem 0rem -0.063rem var(--color-grey-boxshadow);
+            box-shadow: .3rem .3rem 0rem -0.063rem var(--color-grey-boxshadow);
+            -webkit-box-shadow: .3rem .3rem 0rem -0.063rem var(--color-grey-boxshadow);
+            -moz-box-shadow: .3rem .3rem 0rem -0.063rem var(--color-grey-boxshadow);
             transition: ease .2s;
             &:hover {
                 box-shadow: 0rem 0rem 0rem -0.063rem var(--color-grey-boxshadow);
@@ -27,7 +27,7 @@
 
             .wp-portfolio__item-img {
                 margin-top: 1rem;
-                height: 20rem;
+                height: 10rem;
                 width: 100%;
                 border: 0.125rem solid var(--color-secondary);
             }
@@ -46,27 +46,34 @@
     }
 }
 
-@media (max-width: 1490px)
+@media (min-width: 760px)
 {
     .wp-portfolio__container {
         .wp-portfolio__items {
             grid-template-columns: repeat(2, 1fr);
             gap: 1.5rem;
+        }
+    }
+}
 
+@media (min-width: 1024px)
+{
+    .wp-portfolio__container {
+        .wp-portfolio__items {
             .wp-portfolio__item {
-                box-shadow: .3rem .3rem 0rem -0.063rem var(--color-grey-boxshadow);
-                -webkit-box-shadow: .3rem .3rem 0rem -0.063rem var(--color-grey-boxshadow);
-                -moz-box-shadow: .3rem .3rem 0rem -0.063rem var(--color-grey-boxshadow);
+                .wp-portfolio__item-img {
+                    height: 17rem;
+                }
             }
         }
     }
 }
 
-@media (max-width: 540px)
+@media (min-width: 1280px)
 {
     .wp-portfolio__container {
         .wp-portfolio__items {
-            grid-template-columns: repeat(1, 1fr);
+            grid-template-columns: repeat(3, 1fr);
         }
     }
 }

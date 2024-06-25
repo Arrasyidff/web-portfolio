@@ -5,7 +5,7 @@ function App() {
       <Header />
       <AboutMe />
       <Service />
-      {/* <Portfolio /> */}
+      <Portfolio />
       {/* <ContactMe /> */}
     </>
   );
