@@ -31,7 +31,7 @@ const LINKS: Link[] = [
   {iconClass: 'fab fa-linkedin-in', link: 'https://www.linkedin.com/in/arrasyid-fadel-fatonsyah/'},
   {iconClass: 'fab fa-github-square', link: 'https://github.com/Arrasyidff'},
   {iconClass: 'far fa-envelope', link: 'mailto:aff.anton20@gmail.com'},
-  {iconClass: 'fab fa-whatsapp', link: 'https://wa.me/089635164141'}
+  {iconClass: 'fab fa-whatsapp', link: 'https://wa.me/+6289635164141'}
 ]
 
 export default ContactMe
