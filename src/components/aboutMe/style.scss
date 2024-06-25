@@ -1,33 +1,33 @@
 .wp__about-me-container {
     background: var(--color-secondary);
     position: relative;
-    overflow: hidden;
-    color: white !important;
+    color: white;
 
-    h1, h2 {
-        color: white !important;
+    h1, h2, p {
+        color: white;
     }
+    
     .wp__about-me--description {
         text-align: center;
-        width: 65%;
+        width: 100%;
         margin: 0 auto;
     }
 
     button {
         font-family: var(--montserrat);
-        font-size: 1.8rem;
+        font-size: 1rem;
         color: black;
         background: white;
         border: none;
         outline: none;
         padding: .5rem;
-        box-shadow: .5rem .5rem 0rem -0.063rem var(--color-grey-boxshadow);
-        -webkit-box-shadow: .5rem .5rem 0rem -0.063rem var(--color-grey-boxshadow);
-        -moz-box-shadow: .5rem .5rem 0rem -0.063rem var(--color-grey-boxshadow);
+        box-shadow: .3rem .3rem 0rem -0.063rem var(--color-grey-boxshadow);
+        -webkit-box-shadow: .3rem .3rem 0rem -0.063rem var(--color-grey-boxshadow);
+        -moz-box-shadow: .3rem .3rem 0rem -0.063rem var(--color-grey-boxshadow);
         transition: ease .2s;
 
         &:not(:last-child) {
-            margin-right: 2rem;
+            margin-right: .8rem;
         }
 
         &:hover {
@@ -38,18 +38,18 @@
     }
 
     .wp__about-me-skillset {
-        margin-top: 2.8rem;
+        margin-top: 2.5rem;
         overflow: hidden;
         .wp__about-me-skillset-item {
             margin: 0 auto;
-            margin-top: 1.5rem;
+            margin-top: 1rem;
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            width: 60%;
+            width: 100%;
 
             button {
-                margin-bottom: 2rem;
+                margin-bottom: .8rem;
             }
         }
     }
@@ -68,72 +68,25 @@
     }
 }
 
-@media (max-width: 1650px)
+@media (min-width: 1024px)
 {
     .wp__about-me-container {
-        .wp__about-me--description {
-            width: 100%;
-        }
-
         button {
-            font-size: 1.5rem !important;
-            padding: .3rem;
-
-            &:not(:last-child) {
-                margin-right: 1rem;
-            }
-        }
-
-        .wp__about-me-skillset {
-            .wp__about-me-skillset-item {
-                margin-top: 1rem;
-                width: 100%;
-
-                button {
-                    margin-bottom: 1rem;
-                }
-            }
+            font-size: 1.9rem;
         }
     }
 }
 
-@media (min-width: 820px) and (max-width: 1700px)
+@media (min-width: 1280px)
 {
     .wp__about-me-container {
-        .wp__about-me--description {
-            width: 80%;
-        }
 
-        .wp__about-me-skillset {
-            .wp__about-me-skillset-item {
-                width: 80%;
-            }
+        .wp__about-me--description,
+        .wp__about-me-skillset .wp__about-me-skillset-item {
+            width: 70%;
         }
-    }
-}
-
-@media (max-width: 540px)
-{
-    .wp__about-me-container {
-        
         button {
-            font-size: 1rem !important;
-            padding: .3rem;
-            box-shadow: .3rem .3rem 0rem -0.063rem var(--color-grey-boxshadow);
-            -webkit-box-shadow: .3rem .3rem 0rem -0.063rem var(--color-grey-boxshadow);
-            -moz-box-shadow: .3rem .3rem 0rem -0.063rem var(--color-grey-boxshadow);
-
-            &:not(:last-child) {
-                margin-right: .8rem;
-            }
-        }
-
-        .wp__about-me-skillset {
-            .wp__about-me-skillset-item {
-                button {
-                    margin-bottom: .8rem;
-                }
-            }
+            font-size: 1rem;
         }
     }
 }

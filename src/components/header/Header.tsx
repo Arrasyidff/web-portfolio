@@ -22,8 +22,8 @@ function Header() {
       </div>
 
       <div className='wp__header-content fade-in-top'>
-        <h1>HI I'M ARFAFA</h1>
-        <h2>I'm Web Developer</h2>
+        <h1 className='section--title'>HI I'M ARFAFA</h1>
+        <h2 className='sub--title'>I'm Web Developer</h2>
         <p>I have a passion for creating innovative and efficient digital solutions. Let's work together to make your great ideas a reality!</p>
       </div>
       <img className='wp__header--black-triangle fade-in-left' src={black_triangle} alt="black-triangle" />
