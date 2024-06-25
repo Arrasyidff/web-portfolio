@@ -38,6 +38,22 @@
             font-size: 1.5rem;
         }
     }
+
+    &.fade-in-top {
+        animation-delay: 4s;
+    }
+    .section--title.fade-in-top {
+        animation-delay: 4s;
+    }
+
+    .sub--title.fade-in-top {
+        animation-delay: 4.20s;
+    }
+
+    .contact-me__items.fade-in-top,
+    .wp-contact-me__actions.fade-in-top {
+        animation-delay: 4.40s;
+    }
 }
 
 @media (min-width: 760px)

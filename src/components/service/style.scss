@@ -23,6 +23,17 @@
             }
         }
     }
+
+    &.fade-in-top {
+        animation-delay: 2.40s;
+    }
+    .section--title.fade-in-top {
+        animation-delay: 2.40s;
+    }
+
+    .wp-service__items.fade-in-top {
+        animation-delay: 3s;
+    }
 }
 
 @media (min-width: 760px)

@@ -54,16 +54,19 @@
         }
     }
 
+    &.fade-in-top {
+        animation-delay: 1.30s;
+    }
     .section--title.fade-in-top {
         animation-delay: 1.30s;
     }
     .wp__about-me--description.fade-in-top {
-        animation-delay: 2s;
+        animation-delay: 1.40s;
     }
     .wp__about-me-skillset.fade-in-top {
-        animation-delay: 2.30s;
+        animation-delay: 2s;
         .wp__about-me-skillset-item.fade-in-top {
-            animation-delay: 3s;
+            animation-delay: 2.20s;
         }
     }
 }

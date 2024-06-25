@@ -2,9 +2,9 @@ import './style.scss'
 
 function Service() {
   return (
-    <div className='wp-service__container section--padding'>
-        <h1 className='section--title'>SERVICE.</h1>
-        <div className='wp-service__items'>
+    <div className='wp-service__container fade-in-top section--padding'>
+        <h1 className='section--title fade-in-top'>SERVICE.</h1>
+        <div className='wp-service__items fade-in-top'>
             <div className='wp-service__item'>
                 <h2 className='sub--title'>Fullstack Development.</h2>
                 <p>

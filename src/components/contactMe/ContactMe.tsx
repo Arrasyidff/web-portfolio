@@ -2,11 +2,11 @@ import './style.scss'
 
 function ContactMe() {
   return (
-    <div className='wp-contact-me__container section--padding'>
-        <h1 className='section--title'>CONTACT.</h1>
+    <div className='wp-contact-me__container fade-in-top section--padding'>
+        <h1 className='section--title fade-in-top'>CONTACT.</h1>
 
-        <h2 className='sub--title'>Feel free to reach out if you'd like to collaborate or chat about tech!</h2>
-        <div className='contact-me__items'>
+        <h2 className='sub--title fade-in-top'>Feel free to reach out if you'd like to collaborate or chat about tech!</h2>
+        <div className='contact-me__items fade-in-top'>
             <div className='contact-me__item'>
             {LINKS.map((link, i) => (
                 <button key={i} onClick={() => window.open(link.link)}>
@@ -16,7 +16,7 @@ function ContactMe() {
             </div>
         </div>
 
-        <div className='wp-contact-me__actions'>
+        <div className='wp-contact-me__actions fade-in-top'>
             <button>HIRE ME.</button>
         </div>
     </div>

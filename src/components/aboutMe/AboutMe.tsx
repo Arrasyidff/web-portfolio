@@ -2,7 +2,7 @@ import './style.scss'
 
 function AboutMe() {
   return (
-    <section className='wp__about-me-container section--padding'>
+    <section className='wp__about-me-container fade-in-top section--padding'>
       <h1 className='section--title fade-in-top'>ABOUT ME.</h1>
       <p className='wp__about-me--description fade-in-top'>
         Hi there! My name is Arrasyid Fadel Fatonsyah, but you can call me ARFAFA.
