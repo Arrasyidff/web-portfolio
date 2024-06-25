@@ -1,5 +1,4 @@
 import './style.scss'
-import cv from '@assets/contact/cv.jpg'
 
 function ContactMe() {
   return (
