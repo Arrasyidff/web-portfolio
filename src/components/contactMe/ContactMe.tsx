@@ -1,4 +1,5 @@
 import './style.scss'
+import cv from '@assets/contact/cv.jpg'
 
 function ContactMe() {
   return (
@@ -17,7 +18,9 @@ function ContactMe() {
         </div>
 
         <div className='wp-contact-me__actions fade-in-top'>
-            <button>HIRE ME.</button>
+            <a href="/files/cv.pdf" download="Fullstack Developer Arrasyid Fadel Fatonsyah.pdf">
+              <button>Hire Me.</button>
+            </a>
         </div>
     </div>
   )
