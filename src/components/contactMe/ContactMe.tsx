@@ -18,7 +18,7 @@ function ContactMe() {
 
         <div className='wp-contact-me__actions fade-in-top'>
             <a href="/files/cv.pdf" download="Fullstack Developer Arrasyid Fadel Fatonsyah.pdf">
-              <button>Hire Me.</button>
+              <button>HIRE ME.</button>
             </a>
         </div>
     </div>
